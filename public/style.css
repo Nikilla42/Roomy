@@ -1,0 +1,152 @@
+*
+{
+	margin : 0;
+	padding : 0;
+}
+
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(apartments.jpg);
+	height:50vh;
+	background-size:cover;
+	background-position:center;
+}
+
+.main-nav
+{
+	float: right;
+	list-style:none;
+	margin-top:30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration:none;
+	padding:5px 20px;
+	font-family:"Roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav li.active a
+{
+	border:1px solid white;
+}
+.main-nav li a:hover
+{
+	border:1px solid white;
+}
+
+.logo
+{
+	color: black;
+	float:left;
+	padding-left:25px;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight:bold;
+}
+
+.search-form
+{
+	margin-top:10px;
+	padding:none;
+	float:left;
+	margin-left:100px;
+}
+input[type=text]
+{
+	padding:7px;
+	border:none;
+	font-size:16px;
+	font-family:sans-serif;
+	
+}
+button
+{
+	float:right;
+	background: skyblue;
+	color:white;
+	boder-radius: 0 5px 5px 0;
+	cursor:pointer;
+	position:relative;
+	padding:7px;
+	font-family:sans-serif;
+	border:none;
+	font-size:16px;
+}
+
+.place
+{
+	position:absolute;
+	width:1500px;
+	margin-left:0;
+	margin-top:0;
+	
+	
+}
+h1
+{
+	color:skyblue;
+	text-transform:uppercase;
+	font-size:60px;
+	text-align:center;
+	margin-top:260px;
+	
+}
+.buttones
+{
+	margin-top:50px;
+	margin-left:550px;
+}
+
+.btn
+{
+	border: 1px solid grey;
+	padding: 10px 30px;
+	color:black;
+	text-decoration:none;
+	margin-right:5px;
+	font-size:13px;
+	text-transform:uppercase;
+	
+}
+.btn-one
+{
+	
+	font-family:"Roboto",sans-serif;
+	
+}
+.btn-one:hover
+{
+	background-color:grey;
+	transition:all 0.5s ease-in;
+}
+
+.btn-two
+{
+	font-family:"Roboto",sans-serif;
+}
+.btn-two:hover
+{
+	background-color:grey;
+	transition:all 0.5s ease-in;
+}
+
+.btn-three
+{
+	font-family:"Roboto",sans-serif;
+}
+
+.btn-three:hover
+{
+	background-color:grey;
+	transition:all 0.5s ease-in;
+}
+
+
