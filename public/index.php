@@ -1,14 +1,9 @@
-<!doctype html>
+<?php require_once('../private/initialize.php'); ?>
+<?php include(SHARED_PATH . '.public_header.php'); ?>
 
-<html lang="en">
-	<head>
-		<title>Roomy</title>
-		<meta charset="utf-8">
-	</head>
+<div id="main">
 	
-	<body>
+	<div id="page">
 	
-		<h1>Find your Roomy</h1>
-	
-	</body>
-</html>
+	</div>
+</div>
