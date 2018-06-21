@@ -1,73 +1,15 @@
-<html>
-<head>
+<?php require_once('../private/initialize.php'); ?>
 
-<title> ROOMY </title>
+<?php include(SHARED_PATH . '/public_header.php'); ?>
 
-<link href ="style.css" rel = "stylesheet" type "text/css">
-<style>
+<div id="main">
 
-div.hero{
-	text-align:center;
-}
-</style>
-</head>
+  <?php include(SHARED_PATH . '/public_navigation.php'); ?>
 
+  <div id="page">
 
-<body >
-	<header>
+  </div>
 
-	<div class = "row">
-		<div class = "logo">
-			ROOMY
-		</div>
-		
-			<form class = "search-form">
-		<input type = "text" placeholder= "search">
-		<button>Search</button>
-		</form>
-		
+</div>
 
-		
-		
-	<ul class = "main-nav">
-	
-	
-	<li class="active"> <a href=""> HOME </a> </li>
-	<li> <a href=""> SERVICES </a> </li>
-	<li> <a href=""> ABOUT </a> </li>
-	<li> <a href=""> CONTACT </a> </li>
-	<li> <a href=""> FAQ </a> </li>
-	
-	</ul>
-	
-	
-	</div>
-	
-	<div class = "place">
-	
-	<h1> Search for a place!</h1>
-	
-	</div>
-	
-	
-
-	
-</header>	
-	
-<div class ="buttones">
-	
-		<a href = "" class="btn btn-one"> search</a>
-		<a href="" class= "btn btn-two"> register </a>
-		<a href="" class= "btn btn-three"> login </a>
-		
-	</div>
-	
-	
-		
-
-	
-	
-
-</body>
-
-</html>
+<?php include(SHARED_PATH . '/public_footer.php'); ?>
