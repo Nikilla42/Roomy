@@ -1,4 +1,8 @@
 <?php require_once('../../private/initialize.php'); ?>
+
+
+<?php require_login(); ?>
+
 <?php $page_title = 'Roomy Staff Menu'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
@@ -8,7 +12,9 @@
 		<h2>Main Menu</h2>
 		<ul>
 			<li><a href="<?php echo url_for('/staff/subjects/index.php'); ?>">Subjects</a>
-			<li><a href="<?php echo url_for('/staff/pages/index.php'); ?>">Pages</a>
+			
+			<li><a href="<?php echo url_for('/staff/admins/index.php'); ?>">Admins</a>
+
 		</ul>
 	</div>
 	

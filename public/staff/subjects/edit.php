@@ -1,6 +1,9 @@
 <?php 
 	require_once('../../../private/initialize.php');
 	
+	
+	require_login(); 
+	
 	if(!isset($_GET['id'])){
 		redirect_to(url_for('/staff/subjects/index.php'));
 	}
@@ -15,6 +18,7 @@
 		
 		$result = update_subject($subject);
 		if($result === true){
+			$_SESSION ['message'] = 'The subject was updated successfully.';
 			redirect_to(url_for('/staff/subjects/show.php?id=' . $id));
 		} else{
 			$errors = $result;

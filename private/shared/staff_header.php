@@ -1,24 +1,27 @@
 <?php
-	if(!isset($page_title)) { $page_title = 'Roomy Staff Area';}
+  if(!isset($page_title)) { $page_title = 'Staff Area'; }
 ?>
 
 <!doctype html>
 
 <html lang="en">
-	<head>
-	  <title>RFR - <?php echo h($page_title); ?></title>
-	  <meta charset="utf-8">
-		<link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/staff.css'); ?>" />
-	</head>
-	
-	<body>
-	
-	  <header>
-			<h1>Roomy Staff Area</h1>
-	  </header>
-		
-	  <navigation>
-			<ul>
-				<li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
-			</ul>
-	  </navigation>
+  <head>
+    <title>FYR - <?php echo h($page_title); ?></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/staff.css'); ?>" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Roomy Staff Area</h1>
+    </header>
+
+    <navigation>
+      <ul>
+        <li>User: <?php echo $_SESSION['username'] ?? ''; ?></li>
+        <li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
+        <li><a href="<?php echo url_for('/staff/logout.php'); ?>">Logout</a></li>
+      </ul>
+    </navigation>
+
+    <?php echo display_session_message(); ?>
